@@ -17,3 +17,5 @@ Strictly, the performance of an **SBVS** programme should be evaluated from thre
 Generally, **ranking power** doesn't care about whether the programme can generate correct ligand poses or accurate affinities but only cares about the ranking orders of compounds resulting from the programmes (usually according to their affinities).
 
 In this project, we only focused on the **ranking power** of the programmes.
+
+### How to evaluate
