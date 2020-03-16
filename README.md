@@ -1,6 +1,6 @@
 # MSc Dissertation at UoE
 
-Main goal: Performance evaluation of two Virtual Screening (VS) tools (LIDAEUS and Autodock Vina). Based on the evaluation results, making attempts to improve the VS performance of LIDAEUS.
+Main goal: Performance evaluation of two Virtual Screening (**VS**) tools (LIDAEUS and Autodock Vina). Based on the evaluation results, making attempts to improve the **VS** performance of LIDAEUS.
 
 ## A bit background
 
