@@ -40,9 +40,9 @@ The disadvantage of this method is even more obvious. First, how should we find 
 
 ##### Good metrics, bad metircs
 
-Second, does the **AUROC** really work properly or are these metrics good enough? The answer is, **sometimes**. Because, soon, people found that multiple shapes of the **ROC** curve can share one single **AUROC** value but one of these shapes represents a better **VS** performance than the others did. The underlying concern is the so-called **early recognition problem** in **VS**. To see whether a programme can address such a problem, people borrowed and developed more metrics, including partial AUC (**pAUC**), Robust Initial Enhancement (**RIE**), Boltzmann-Enhanced Discrimination of ROC (**BEDROC**), Enrichment Factor (**EF**), power metric, predictiveness curve, statistical analysis framework, etc. Essentially and certainly, all these metrics have more or less issues, but people seemed to give up addressing this good/bad metirc problem since 2015 when pridictiveness curve was introduced.
+Second, does the **AUROC** really work properly or are these metrics good enough? The answer is, **sometimes**. Because, soon, people found that multiple shapes of the **ROC** curve can share one single **AUROC** value but one of these shapes represents a better **VS** performance than the others did. The underlying concern is the so-called **early recognition problem** in **VS**. To see whether a programme can address such a problem, people borrowed and developed more metrics, including partial AUC (**pAUC**), Robust Initial Enhancement (**RIE**), Boltzmann-Enhanced Discrimination of ROC (**BEDROC**), Enrichment Factor (**EF**), power metric, predictiveness curve, statistical analysis framework, etc. Essentially and certainly, all these metrics have more or less issues, but people seemed to give up addressing this good/bad metric problem since 2015 (the year when pridictiveness curve was introduced, but it seems no research group used it).
 
-
+So, **AUROC**, **EF** and **BEDROC** were used in this project, but ultimately, we abandoned the **BEDROC** result because we thought the hyperparameter $\alpha$ of **BEDROC** is too sensitive. 
 
 
 
