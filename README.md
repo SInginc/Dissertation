@@ -34,7 +34,13 @@ The advantage of this method is apparent. That is the data are less biased, even
 
 The second method is to build a list of active compounds and inactive compounds (also referred to as decoys). We expect that the programme can generate a compounds' list, which ranks all the actives in front of the decoys regardless of the order of active compounds. Apparently, such an evaluation deems the **VS** programme as a binary classifier (with this regard, call it **screening power** evaluation is more suitable than **ranking power** evaluation, but, of course, it is still evaluating the **ranking power**, partially). Therefore, people borrowed metrics from the area of classifier, which are the Receiver Operating Characteristic (**ROC**) curve and the Area Under the **ROC** curve (**AUROC**). And people tend to use **AUROC** and its variants because numbers are more intuitive than pictures. 
 
-The disadvantage of this method is even more obvious. First, how should we find and define the inactive compound? In some datasets (**DUD-E** and **DEKOIS** series), decoys are artificial, which might have similar physiochemical properties to actives but different 2D-topology, vice versa. Because of this, people are always asking whether these decoys are really decoys. Such an issue is common in data-driven drug discovery. That is the lack of true negative data. Second, does the **AUROC** really work properly? The answer is, sometimes. Because, soon, people found that multiple shapes of the **ROC** curve can share the same **AUROC** value and one of these shapes represents a better **VS** performance than the others did. The underlying concern is the so-called **early recognition problem** in **VS**.
+##### Artificial bias
+
+The disadvantage of this method is even more obvious. First, how should we find and define the inactive compound? In some datasets (**DUD-E** and **DEKOIS** series), decoys are artificial, which might have similar physiochemical properties to actives but different 2D-topology, vice versa. Because of this, people are always asking whether these decoys are really decoys. Such an issue is common in data-driven drug discovery. That is the lack of true negative data. 
+
+##### Good or bad metircs
+
+Second, does the **AUROC** really work properly or are these metrics good enough? The answer is, **sometimes**. Because, soon, people found that multiple shapes of the **ROC** curve can share one single **AUROC** value but one of these shapes represents a better **VS** performance than the others did. The underlying concern is the so-called **early recognition problem** in **VS**. To see whether a programme can address such a problem, people borrowed and developed more metrics, including partial AUC (**pAUC**), Robust Initial Enhancement (**RIE**), Boltzmann-Enhanced Discrimination of ROC (**BEDROC**), Enrichment Factor (**EF**), etc.
 
 
 
