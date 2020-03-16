@@ -2,9 +2,7 @@
 
 Main goal: Performance evaluation of two Virtual Screening (VS) tools (LIDAEUS and Autodock Vina). Based on the evaluation results, making attempts to improve the VS performance of LIDAEUS.
 
-## Short Introduction
-
-### A bit background
+## A bit background
 
 Virtual screening (**VS**) is a technique to select suitable molecules from a compound pool, which is widely used in the area of drug discovery and material science. According to the selection criteria, it can be divided into two groups, ligand-based VS (**LBVS**) and structure-based VS (**SBVS**). 
 
@@ -18,4 +16,6 @@ Generally, **ranking power** doesn't care about whether the programme can genera
 
 In this project, we only focused on the **ranking power** of the programmes.
 
-### How to evaluate
+## How to evaluate
+
+Certainly, the feasibility of evaluating whatever power is dependent on the availability of experiment-validated data. For **docking power** and **scoring power**, things are much straigtforward because what we need are just the ligand-receptor co-crystals and the affinity numbers of the corresponding ligands. However, for **ranking power**, things become a bit more tricky.
